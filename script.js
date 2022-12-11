@@ -29,12 +29,12 @@ function handleGetData(event) {
       console.log("bad request", error)
     }
   )
+  $input.val('');
 }
 
 function render() {
-  $city.text(weatherData.name)
-  $temp.text(Math.floor(weatherData.main.temp)+ "°")
-  $feelsLike.text(Math.floor(weatherData.main.feels_like)+ "°")
-  $weather.text(weatherData.weather[0].description)
-
+  $city.text(weatherData.name);
+  $temp.text(Math.floor(weatherData.main.temp)+ "°");
+  $feelsLike.text(Math.floor(weatherData.main.feels_like)+ "°");
+  $weather.text(weatherData.weather[0].description);
 }
